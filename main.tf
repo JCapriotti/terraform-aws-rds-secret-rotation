@@ -123,6 +123,8 @@ module "rotation_lambda" {
     }
   }
 
+  recreate_missing_package = var.recreate_missing_package
+
   attach_policy_jsons    = true
   policy_jsons           = local.lambda_policies
   number_of_policy_jsons = length(local.lambda_policies)

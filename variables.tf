@@ -107,3 +107,9 @@ variable "db_security_group_id" {
   type        = string
   default     = null
 }
+
+variable "recreate_missing_package" {
+  description = "Whether to recreate missing Lambda package if it is missing locally or not"
+  type        = bool
+  default     = true
+}
