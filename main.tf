@@ -123,7 +123,8 @@ module "rotation_lambda" {
     }
   }
 
-  recreate_missing_package = var.recreate_missing_package
+  recreate_missing_package  = var.recreate_missing_package
+  role_permissions_boundary = var.role_permissions_boundary
 
   attach_policy_jsons    = true
   policy_jsons           = local.lambda_policies

@@ -113,3 +113,9 @@ variable "recreate_missing_package" {
   type        = bool
   default     = true
 }
+
+variable "role_permissions_boundary" {
+  description = "Optional permissions boundary for rotation lambda IAM role."
+  type        = string
+  default     = null
+}
